@@ -1,0 +1,367 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.35)), url(istockphoto-1321777631-170667a.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+nav {
+    width: 100%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 50px;
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: rgb(84, 184, 255);
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover:after {
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    top: 50%;
+    position: absolute;
+    text-align: center;
+    transform: translateY(-50%);
+    color: rgb(228, 217, 217);
+}
+
+.container h1 {
+    font-size: 70px;
+    margin-top: 80px;
+}
+
+.container h1 ani {
+    color: transparent;
+    -webkit-text-stroke: 1px #fdf6f6;
+}
+
+.container p {
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid rgb(61, 139, 255);
+    color: white;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+span {
+    width: 0;
+    height: 100%;
+    background: rgb(61, 139, 255);
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.3s;
+}
+
+button:hover span {
+    width: 100%;
+
+}
+
+.media {
+    position: absolute;
+    right: 2%;
+    bottom: 5%;
+}
+
+.media img {
+    width: 25px;
+    display: block;
+    margin: 25px 5px;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #04AA6D;
+    color: rgb(247, 241, 241);
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #3c0299;
+    min-width: 220px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: rgb(247, 240, 240);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e0a9e;
+}
+
+
+.searchbox {
+    float: left;
+}
+
+input[type=text] {
+    padding: 9px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+}
+
+.searchbox button {
+
+    padding: 9px;
+    margin-top: 10px;
+    margin-left: 10px;
+    background: orange;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.searchbox button:hover {
+    background: blue;
+}
+
+/* form css start */
+
+
+
+body {
+    width: 100%;
+    height: 100%;
+    background-image: url("angadbg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+
+section {
+    background-color: #91c8ff;
+    width: 45%;
+    margin: 80px auto;
+    border-radius: 5px;
+    border: 5px solid rgb(110, 219, 21);
+    padding-top: 20px;
+}
+
+article div {
+    padding-bottom: 20px;
+}
+
+article label {
+    margin-left: 40px;
+    color: rgb(0, 0, 22);
+}
+
+article input {
+    width: 85%;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin-left: 40px;
+    border-style: none;
+    background: #91c8ff;
+    border: none;
+    font-size: medium;
+    border-bottom: 1px solid rgb(1, 1, 53);
+
+}
+
+::placeholder {
+    color: rgb(92, 140, 180);
+
+}
+
+article h1 {
+    padding: 5px;
+    font-size: 25px;
+    text-align: center;
+}
+
+article sup {
+    color: red;
+
+}
+
+article #male {
+    width: 15px;
+    margin-right: 35px;
+
+
+}
+
+article .man {
+    margin-left: 0;
+    font-family: 'raleway' sons-serif;
+
+}
+
+article #female {
+    width: 15px;
+    margin-left: 40px;
+
+}
+
+article .women {
+    margin-left: 0px;
+    font-family: 'raleway' sons-serif;
+}
+
+article #unknown {
+    width: 15px;
+    margin-left: 40px;
+
+}
+
+article .unknown {
+    margin-left: 0px;
+    font-family: 'raleway' sons-serif;
+}
+
+
+article .radio {
+    padding-bottom: 30px;
+
+}
+
+article #cheakbox {
+    width: 15px;
+
+}
+
+article .cheakbox {
+    margin-left: 0;
+    color: rgb(1, 1, 51);
+    font-family: 'raleway' sons-serif;
+}
+
+article .login {
+    margin: 40px 40px 15px 40px;
+    padding-bottom: 30px;
+
+}
+
+article button {
+    padding: 15px 295px 15px 200px;
+    border: none;
+    border-radius: 40;
+    background: #2e91e1;
+    font-family: 'raleway' sons-serif;
+    font-weight: 600;
+    font-size: 15px;
+
+}
+
+/* form css end */
+
+.form {
+    position: -ms-page;
+    background-position: center;
+
+    
+}
+
+.formcontent {
+    color: azure;
+
+    background-color: #2e91;
+
+}
+
+.formcontent lavel {
+    border-color:red;
+    color: black;
+
+}
+
+
+button:hover span{
+    width: 100%;
+    color: chartreuse;
+}
